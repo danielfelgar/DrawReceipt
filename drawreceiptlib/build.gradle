@@ -1,5 +1,29 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'DrawReceipt'
+    bintrayName = 'DrawReceipt'
+
+    publishedGroupId = 'com.github.danielfelgar'
+    libraryName = 'DrawReceipt'
+    artifact = 'drawreceipt'
+
+    libraryDescription = 'Android lib to draw receipt as bitmap for thermal prints'
+
+    siteUrl = 'https://github.com/danielfelgar/DrawReceipt'
+    gitUrl = 'https://github.com/danielfelgar/DrawReceipt.git'
+
+    libraryVersion = '0.1.0'
+
+    developerId = 'danielfelgar'
+    developerName = 'Daniel Felgar'
+    developerEmail = 'danielsrf_0203@hotmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.1"
@@ -23,3 +47,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.1.1'
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
