@@ -34,17 +34,17 @@ public class MainActivity extends AppCompatActivity {
     public void drawReceipt(View view) {
         Bitmap barcode = BitmapFactory.decodeResource(this.getResources(), R.drawable.barcode);
 
-        ReceiptBuilder receipt = new ReceiptBuilder(700);
+        ReceiptBuilder receipt = new ReceiptBuilder(1200);
         receipt.setMargin(30, 20).
                 setAlign(Paint.Align.CENTER).
                 setColor(Color.BLACK).
-                setTextSize(30).
+                setTextSize(60).
                 setTypeface(this, "fonts/RobotoMono-Regular.ttf").
                 addText("LakeFront Cafe").
                 addText("1234 Main St.").
                 addText("Palo Alto, CA 94568").
                 addText("999-999-9999").
-                addBlankSpace(60).
+                addBlankSpace(30).
                 setAlign(Paint.Align.LEFT).
                 addText("Terminal ID: 123456", false).
                 setAlign(Paint.Align.RIGHT).
@@ -80,14 +80,14 @@ public class MainActivity extends AppCompatActivity {
                 addParagraph().
                 addText("TIP", false).
                 setAlign(Paint.Align.RIGHT).
-                addText("$       ").
-                addLine(120).
+                addText("$        ").
+                addLine(180).
                 setAlign(Paint.Align.LEFT).
                 addParagraph().
                 addText("TOTAL", false).
                 setAlign(Paint.Align.RIGHT).
-                addText("$       ").
-                addLine(120).
+                addText("$        ").
+                addLine(180).
                 addParagraph().
                 setAlign(Paint.Align.CENTER).
                 setTypeface(this, "fonts/RobotoMono-Regular.ttf").
