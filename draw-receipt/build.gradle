@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
 
 ext {
-    bintrayRepo = 'DrawReceipt'
-    bintrayName = 'DrawReceipt'
+    bintrayRepo = 'maven'
+    bintrayName = 'draw-receipt'
 
     publishedGroupId = 'com.github.danielfelgar'
     libraryName = 'DrawReceipt'
-    artifact = 'drawreceipt'
+    artifact = 'draw-receipt'
 
     libraryDescription = 'Android lib to draw receipt as bitmap for thermal prints'
 

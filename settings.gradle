@@ -1,1 +1,1 @@
-include ':sample', ':drawreceiptlib'
+include ':sample', ':draw-receipt'
