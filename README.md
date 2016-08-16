@@ -1,7 +1,7 @@
 # DrawReceipt
 Android lib to draw receipt as bitmap for thermal prints
 
-![Screenshot](DrawReceiptScreenShot.png)
+![Screenshot](DrawReceiptScreenshot.png)
 
 # Usage
 
