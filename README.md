@@ -11,14 +11,6 @@ Android lib to draw receipt as bitmap for thermal prints
 To use this library in your android project, just simply add the following dependency into your build.gradle
 
 ```sh
-repositories {
-    maven {
-        url 'https://dl.bintray.com/danielfelgar/maven/'
-    }
-}
-
-...
-
 dependencies {
     compile 'com.github.danielfelgar:draw-receipt:0.1.0'
 }
