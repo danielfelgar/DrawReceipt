@@ -3,6 +3,20 @@ Android lib to draw receipt as bitmap for thermal prints
 
 ![Screenshot](DrawReceiptScreenshot.png)
 
+# Version
+
+0.1.0
+
+# Download
+To use this library in your android project, just simply add the following dependency into your build.gradle
+
+```sh
+dependencies {
+    compile 'com.inthecheesefactory.thecheeselibrary:fb-like:1.0.1'
+}
+```
+
+
 # Usage
 
         ReceiptBuilder receipt = new ReceiptBuilder(1200);
@@ -66,3 +80,12 @@ Android lib to draw receipt as bitmap for thermal prints
                 addParagraph().
                 addImage(barcode);
         ivReceipt.setImageBitmap(receipt.build());
+# Change Logs
+
+### v0.1.0
+
+Initial version
+
+# License
+
+Apache 2.0
