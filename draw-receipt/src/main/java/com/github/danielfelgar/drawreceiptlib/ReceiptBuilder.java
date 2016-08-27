@@ -17,11 +17,11 @@ public class ReceiptBuilder {
     List<IDrawItem> listItens = new ArrayList<>();
     private int backgroundColor = Color.WHITE;
     private float textSize;
-    private int color;
+    private int color = Color.BLACK;
     private int width;
     private int marginTop, marginBottom, marginLeft, marginRight;
     private Typeface typeface;
-    private Paint.Align align;
+    private Paint.Align align = Paint.Align.LEFT;
 
     public ReceiptBuilder(int width) {
         this.width = width;
