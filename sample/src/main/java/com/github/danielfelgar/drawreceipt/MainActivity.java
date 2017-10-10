@@ -4,6 +4,8 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.location.Address;
+import android.location.Geocoder;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -11,6 +13,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.github.danielfelgar.drawreceiptlib.ReceiptBuilder;
+
+import java.io.IOException;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -95,6 +100,16 @@ public class MainActivity extends AppCompatActivity {
                 addParagraph().
                 addImage(barcode);
         ivReceipt.setImageBitmap(receipt.build());
+
+        Geocoder coder = new Geocoder(this);
+        try {
+            List<Address> enderecos = coder.getFromLocation(-22.90827, -47.06501, 1);
+            enderecos.isEmpty();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
     }
 
 }
