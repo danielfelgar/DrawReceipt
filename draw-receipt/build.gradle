@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/danielfelgar/DrawReceipt'
     gitUrl = 'https://github.com/danielfelgar/DrawReceipt.git'
 
-    libraryVersion = '0.1.2'
+    libraryVersion = '0.1.3'
 
     developerId = 'danielfelgar'
     developerName = 'Daniel Felgar'
