@@ -12,7 +12,7 @@ To use this library in your android project, just simply add the following depen
 
 ```sh
 dependencies {
-    compile 'com.github.danielfelgar:draw-receipt:0.1.1'
+    compile 'com.github.danielfelgar:draw-receipt:0.1.2'
 }
 ```
 
